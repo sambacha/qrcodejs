@@ -162,7 +162,7 @@ var QRCode;
 		
 		if (/android/i.test(sAgent)) { // android
 			android = true;
-			var aMat = sAgent.toString().match(/android ([0-9]\.[0-9])/i);
+			var aMat = sAgent.toString().match(/android ([0-9]+\.?[0-9]*)/i);
 			
 			if (aMat && aMat[1]) {
 				android = parseFloat(aMat[1]);
@@ -324,8 +324,8 @@ var QRCode;
                     }
                 };
                 var fOnSuccess = function() {
-                    self._bSupportDataURI = true;
-
+					self._bSupportDataURI = true;
+					
                     if (self._fSuccess) {
                         self._fSuccess.call(self);
                     }
@@ -367,6 +367,7 @@ var QRCode;
 			this._elImage.style.display = "none";
 			this._el.appendChild(this._elImage);
 			this._bSupportDataURI = null;
+			this._callback = htOption.callback;
 		};
 			
 		/**
