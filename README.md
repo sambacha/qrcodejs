@@ -4,9 +4,23 @@
 
 adds fixes and webpack build
 
-https://www.npmjs.com/package/qrcode-xt
+### npm
+
+[https://www.npmjs.com/package/qrcode-xt]
+
+### jsdelivr cdn 
+
+[https://cdn.jsdelivr.net/npm/qrcode-xt@1.5.0/dist/qrcode.min.js](https://cdn.jsdelivr.net/npm/qrcode-xt@1.5.0/dist/qrcode.min.js)
 
 
+```html
+<script src="https://cdn.jsdelivr.net/npm/qrcode-xt@1.5.0/dist/qrcode.min.js"></script>
+```
+
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/backbone-metamask-bundle@1.0.0/bundle.min.js"></script>
+```
 ## QRCode.js
 QRCode.js is javascript library for making QRCode. QRCode.js supports Cross-browser with HTML5 Canvas and table tag in DOM.
 QRCode.js has no dependencies.
