@@ -1,26 +1,25 @@
 {
-  "name": "@keeex/qrcodejs-kx",
-  "version": "1.0.2",
-  "description": "QRCodeJS is a javascript library for making QRCode. It has no dependencies, is cross-browser and using HTML5 Canvas. This porject is a fork by KeeeX Company from davidshimjs, with Code Length Overflow fixed.",
-  "main": "qrcode.min.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "qrcod-xt",
+  "version": "1.0.0",
+  "description": "qrcodejs - inbrowser qrcode lib",
+  "main": "qrcode.js",
+  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KeeeX/qrcodejs.git"
+    "url": "git+https://github.com/sambacha/qrcodejs.git"
   },
-  "keywords": [
-    "qr",
-    "qrcode",
-    "generator",
-    "davidshimsjs",
-    "keeex"
-  ],
-  "author": "KeeeX",
+  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/KeeeX/qrcodejs/issues"
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production"
   },
-  "homepage": "https://github.com/KeeeX/qrcodejs#readme"
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.26.3",
+    "webpack-cli": "^4.5.0"
+  }
 }

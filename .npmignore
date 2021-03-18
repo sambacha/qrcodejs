@@ -1,3 +1,8 @@
 *.html
 qrcode.js
 LICENSE
+webpack.config.js
+package-lock.json
+.github/
+build/
+.cache
