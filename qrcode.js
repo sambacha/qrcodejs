@@ -277,7 +277,7 @@ var QRCode;
 			this._elImage.src = this._elCanvas.toDataURL("image/png");
 			this._elImage.style.display = "block";
 			this._elCanvas.style.display = "none";
-			this._callback(this);			
+			this._htOption.success && this._htOption.success.call(this);
 		}
 		
 		// Android 2.1 bug workaround
@@ -587,6 +587,13 @@ var QRCode;
 		this._el.title = sText;
 		this._oDrawing.draw(this._oQRCode);			
 		this.makeImage();
+	};
+	
+	/**
+	 * Get the QRCode base64 image string
+	 */
+	QRCode.prototype.getBase64 = function () {
+		return this._oDrawing._elCanvas.toDataURL("image/png");
 	};
 	
 	/**
