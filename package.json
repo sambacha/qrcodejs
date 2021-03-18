@@ -1,5 +1,5 @@
 {
-  "name": "qrcod-xt",
+  "name": "qrcode-xt",
   "version": "1.5.0",
   "description": "qrcodejs - inbrowser qrcode lib",
   "main": "qrcode.js",
