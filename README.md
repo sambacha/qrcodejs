@@ -4,6 +4,8 @@
 
 adds fixes and webpack build
 
+https://www.npmjs.com/package/qrcode-xt
+
 
 ## QRCode.js
 QRCode.js is javascript library for making QRCode. QRCode.js supports Cross-browser with HTML5 Canvas and table tag in DOM.
